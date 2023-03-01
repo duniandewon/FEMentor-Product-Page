@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  --clr-primary-300: hsl(25, 100%, 94%);
+  --clr-primary-400: hsl(26, 100%, 55%);
+
+  --clr-neutral-900: hsl(0, 0%, 0%);
+  --clr-neutral-700: hsl(220, 13%, 13%);
+  --clr-neutral-600: hsl(219, 9%, 45%);
+  --clr-neutral-500: hsl(220, 14%, 75%);
+  --clr-neutral-400: hsl(223, 64%, 98%);
+  --clr-neutral-100: hsl(0, 0%, 100%);
+
+  --fw-bold: 700;
+  --fw-regular: 400;
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html,
+body {
+  height: 100%;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  overflow-x: hidden;
+}
+/*
+  6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+  9. Create a root stacking context
+*/
+#app {
+  isolation: isolate;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: var(--fw-regular);
+  color: var(--clr-neutral-600);
+}
+
+.btn {
+  background-color: var(--clr-primary-400);
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 10px;
+  color: var(--clr-neutral-100);
+  gap: 0.8rem;
+  cursor: pointer;
+}
+
+.btn.block {
+  width: 100%;
+}
